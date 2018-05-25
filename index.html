@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/892c932f46.js"></script>
+    <title>MP1 Starter</title>
+</head>
+
+<body>
+
+    <!--@requirement 2 -- sticky navbar-->
+    <div id = "navbar">
+        <i class="fa fa-smile-o modalbtn" ></i>
+        <h2 class="subtitle">Matthew Cannalte -- Who is He?</h2>
+        <div id = "navbuttons">
+            <div class = "navbutton" id = "selectorsect1">Bilder Team</div>
+            <div class = "navbutton" id = "selectorsect2">About Me</div>
+            <div class = "navbutton" id = "selectorsect3">Good Times</div>
+            <div class = "navbutton" id = "selectorsect4">Fun Fact</div>
+            <div class = "navbutton" id = "selectorsect5">Recap</div>
+        </div>
+    </div>
+
+    <div id = "content">
+        <!--@requirement 1 -- rows from top to bottom-->
+        <div class = "row secondary" id = "sect1">
+            <!--Fixed image in here, see CSS-->
+            <div class = "overlay">
+                <a href="https://www.bilder.fund" ><h1>Bilder</h1></a>
+                <h3>Build Your Community.</h3>
+            </div>
+        </div>
+        <div class = "row primary" id = "sect2">
+            <div>
+                <h2 class = "subtitle">What I Do</h2>
+                I am a student pursuing my Bachelor's of Science in Computer Science at the
+                University of Illinois -- Urbana-Champaign. I come from Lake in the Hills, IL,
+                where I am an alumnus of Huntley High School.
+                <br/><br/>
+                I am also a developer and core
+                team member at Bilder, an institutional crowdfunding platform, student startup,
+                and object of my sincerest pride. Entrepreneurship is my passion.
+                <br/>
+                <br/>
+
+                <div class="modalbtn" id = "resumebtn">Résumé</div>
+            </div>
+
+            <div>
+                <h2 class = "subtitle">Things I Enjoy</h2>
+                I am an avid fan of the Chicago Cubs, in addition to most other Chicago
+                sports teams whose performances have not lately been up to the standard of
+                inclusion in this short autobiography.
+                <br/><br/>
+                My favorite television shows of all time
+                are The Office and Breaking Bad, though lately I've been enjoying Rick and Morty
+                quite a bit.
+                <br/><br/>
+                My game of choice is Tetris, and I fancy myself one of the best non-competitive
+                players out there.
+                <br/><br/>
+                My days of competitive athletics are long gone, but I still enjoy working out
+                several days per week.
+            </div>
+            <div>
+                <img src="assets/images/IllinoisLogo.png" width = "300"/>
+            </div>
+        </div>
+        <div class = "row secondary" id = "sect3">
+            <div>
+                <h2 class = "subtitle">My Natural Habitat(s)</h2>
+                To the right are some of my favorite memories including:
+                <ul>
+                    <li>My first visit to the Siebel Center for Computer Science at UIUC</li>
+                    <li>Reading excerpts of Machiavelli to my cousins</li>
+                    <li>Senior Homecoming with my girlfriend (of 3 years and counting)</li>
+                    <li>Something thorny and unpleasant, and a cactus</li>
+                </ul>
+            </div>
+
+            <!--@requirement 6 --carousel with sliders -->
+            <div id = "carousel">
+                <div class="carousel-blind">
+                    <i class="carouselbtn fa fa-arrow-left" id = "back"></i>
+                </div>
+                <div id = "carousel-container">
+                    <img id = "carouselimg" src = "assets/images/slider2.jpg"/>
+                </div>
+                <div class="carousel-blind">
+                    <i class="carouselbtn fa fa-arrow-right" id = "fwd"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--@requirement 12 -- video tag for embedded playback-->
+        <div class = "row primary" id = "sect4">
+            <div class = "overlay">
+                <h1>When I drink coffee, I take it black.</h1>
+                <h3>If I don't enjoy the flavor, I'm less likely to overuse it.</h3>
+                <h4>Just a fun fact, I guess.</h4>
+            </div>
+            <video autoplay loop muted>
+                <source src="assets/video/bgvideo.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- @requirement 14 -- scalable vector icons from fontawesome -->
+        <!-- @requirement 7 -- tri-column layout -->
+        <div class = "row primary" id = "sect5">
+            <div>
+                <h2 class = "subtitle">Dedicated Student</h2>
+                <i class = "fa fa-university"></i>
+                There's nothing I love more than learning and watching others learn. It's the most
+                rewarding experience I've ever known, and there's never a shortage of things to learn.
+            </div>
+            <div>
+                <h2 class = "subtitle">Decent Person</h2>
+                <i class = "fa fa-thumbs-up" ></i>
+                The kind of guy you can bring home to mom.
+            </div>
+            <div>
+                <h2 class = "subtitle">I Didn't Sleep Last Night</h2>
+                <i class="fa fa-bed"></i>
+                Not going to lie, I really thought I got ahead of this one. Point taken, course
+                staff.
+            </div>
+        </div>
+
+        <!-- @requirement 14 -- scalable vector icons via fontawesome -->
+        <!-- @requirement 15 -- social media icons -->
+        <div id = "footer">
+            <h2 class="subtitle">Keep Up to Date | Get in Touch</h2>
+            <div id = "social">
+                <a href="https://www.facebook.com/profile.php?id=100001282495952">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/alocalextremum">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/matthew-cannalte/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/mcannalte">
+                    <i class="fa fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="bundle.js" type="text/javascript"></script>
+    </body>
+
+</html>
